@@ -53,15 +53,15 @@ CREATE TABLE mock_data (
     supplier_country VARCHAR NOT NULL
 );
 
-\copy mock_data FROM '/data/MOCK_DATA.csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (1).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (2).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (3).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (4).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (5).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (6).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (7).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (8).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
-\copy mock_data FROM '/data/MOCK_DATA (9).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA.csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (1).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (2).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (3).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (4).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (5).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (6).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (7).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (8).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
+COPY mock_data FROM '/data/MOCK_DATA (9).csv' WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
 SELECT COUNT(*) AS total_rows FROM mock_data;
